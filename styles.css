@@ -16,6 +16,9 @@ body {
   color: #f2f2f2;
 }
 
+main {
+  padding-top: 200px;
+}
 
 header {
   width: 100%;
@@ -144,4 +147,36 @@ footer {
   .proj-info {
     width: 100%;
   }
+}
+
+.main-card {
+  display: flex;
+  align-items: flex-start;
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-left: 4px solid #ff2c2c;
+  padding: 1rem;
+  border-radius: 4px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-img {
+    width: 128px;
+    height: 128px;
+    object-fit: contain;
+    margin-right: 1rem;
+    border-radius: 0px;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.main-info {
+    flex: 1;
 }

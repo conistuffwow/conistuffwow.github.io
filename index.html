@@ -4,26 +4,36 @@
         <meta name="viewport" content="width=device-width, inital-scale=1.0"/>
         <title>ConiShadow</title>
         <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="header.css">
         <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Fira+Code&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <h2>CONISHADOW</h2>
-            <p class="tagline">The ultimate lifeform.</p>
-            <nav>
-                <a href="#about">About</a>
-                <a href="#projects">Stuff I make</a>                
-            </nav>
-        </header>
+        <div id="main-header">
+            <div class="header-inner">
+                <div class="logo">ConiShadow</div>
+                <nav class="nav-links">
+                    <a href="#about">About me!</a>
+                    <a href="#projects">My projects</a>
+                    <a href="#themes">My themes</a>
+                </nav>
+            </div>
+        </div>
+        <section id="about"></section>
 
         <main>
-            <section id="about">
-                <h2>Hello, i'm Coni.</h2>
-                <p>I'm a 14 year old coder from Canada, and I create stuff for macOS, and some other platforms from time-to-time. Check out my projects down below!</p>
-            </section>
+                <h2>About</h2>
+                <div class="main-grid">
+                    <div class="main-card">
+                        <img src="images/me.jpg" alt="me" class="main-img">
+                        <div class="main-info">
+                            <h2>Hey, I'm coni.</h2>
+                            <p>I'm 14, a canadian, and I make stuff for macOS and the web, i guess. I'm a fan of Shadow the Hedgehog (go figure), LittleBigPlanet, Apple, and GTA.</p>
+                        </div>
+                    </div>
+                </div>
 
             <section id="projects">
-                <h2>Stuff i make</h2>
+                <h2>Projects I make</h2>
                 <div class="proj-grid">
                     <a href="https://github.com/conistuffwow/Clipman/" class="proj-card" target="_blank" rel="noopener">
                         <img src="images/clipman-64.png" alt="clipman logo" class="proj-img" />
@@ -36,14 +46,28 @@
                         <img src="images/marky.png" alt="clipman logo" class="proj-img" />
                         <div class="proj-info">
                             <h3>Marky</h3>
-                            <p>Write markdown with a live preview on macOS.</p>
+                            <p>Write markdown with a live preview on macOS. COMING SOON.</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section id="themes">
+                <h2>Themes I make</h2>
+                <div class="proj-grid">
+                    <a href="https://marketplace.visualstudio.com/items?itemName=conishadow.chaos-themes" class="proj-card" target="_blank" rel="noopener">
+                        <img src="images/vscode-chaos.PNG" alt="clipman logo" class="proj-img" />
+                        <div class="proj-info">
+                            <h3>VSCode Chaos Themes</h3>
+                            <p>Shadow and Silver the Hedgehog inspired vscode colour schemes. use with orbitron font for best look!</p>
                         </div>
                     </a>
                 </div>
             </section>
         </main>
+        </main>
         <footer>
             <p>conishadow :3</p>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>
