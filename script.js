@@ -1,20 +1,20 @@
 const header = document.getElementById('main-header');
-let isScrolled = false;
 
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 80 && !isScrolled) {
-    header.classList.add('transitioning');
-    requestAnimationFrame(() => {
-      header.classList.add('scrolled');
-      header.classList.remove('transitioning');
-    });
-    isScrolled = true;
-  } else if (window.scrollY <= 80 && isScrolled) {
-    header.classList.add('transitioning');
-    requestAnimationFrame(() => {
-      header.classList.remove('scrolled');
-      header.classList.remove('transitioning');
-    });
-    isScrolled = false;
+function updateHeaderOnScroll() {
+  const isDesktop = window.innerWidth > 768;
+
+  if (!isDesktop) {
+    header.classList.remove('scrolled'); // always expanded on mobile
+    return;
   }
-});
+
+  if (window.scrollY > 80) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+}
+
+window.addEventListener('scroll', updateHeaderOnScroll);
+window.addEventListener('resize', updateHeaderOnScroll);
+window.addEventListener('load', updateHeaderOnScroll);

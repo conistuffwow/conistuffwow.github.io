@@ -64,3 +64,11 @@ main {
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
 }
+
+@media (max-width: 768px) {
+    #main-header {
+        background-color: rgba(0,0,0,0.4);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+    }
+}

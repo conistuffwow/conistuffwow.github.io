@@ -180,3 +180,13 @@ footer {
 .main-info {
     flex: 1;
 }
+
+#hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
